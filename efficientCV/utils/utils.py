@@ -1,7 +1,5 @@
 import math
-import torch
 import numpy as np
-from ptflops import get_model_complexity_info
 
 
 def make_divisible(x, divisible_by=8):
@@ -25,16 +23,3 @@ def _round_repeats(repeats: int, depth_mult: float) -> int:
     if depth_mult == 1.0:
         return repeats
     return int(math.ceil(depth_mult * repeats))
-
-
-def calculate_MACs(model):
-    """MACs stand for Multiply–accumulate operation introduced on MobileNetV
-    to compute model complexity."""
-
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = model.to(device)
-    macs, params = get_model_complexity_info(
-        model, (3, 224, 224), as_strings=True, print_per_layer_stat=False, verbose=True
-    )
-    print("{:<30}  {:<8}".format("Computational complexity: ", macs))
-    print("{:<30}  {:<8}".format("Number of parameters: ", params))
