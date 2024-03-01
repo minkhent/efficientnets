@@ -19,7 +19,8 @@ pip install efficientCV
 
 ```
 pip install ptflops
-
+```
+```
 from ptflops import get_model_complexity_info
 
 def calculate_MACs(model):
