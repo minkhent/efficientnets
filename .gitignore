@@ -10,3 +10,4 @@ efficientCV/__pycache__/
 efficientCV.egg-info/
 dist/
 run.py
+README_DEV.md
