@@ -1,0 +1,11 @@
+
+efficientCV_env/
+.vscode/
+.pytype/
+.mypy_cache/
+efficientCV/layers/__pycache__/
+efficientCV/models/__pycache__/
+efficientCV/utils/__pycache__/
+efficientCV/__pycache__/
+dist/
+run.py
