@@ -12,7 +12,7 @@ setuptools.setup(
     description="Computational efficient models for computer vision",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/minkhent/test_repo",
+    url="https://github.com/minkhent/efficientnets",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
