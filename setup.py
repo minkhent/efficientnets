@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="efficientCV",
-    version="0.0.1",
+    version="0.0.3",
     author="Min Khent",
     author_email="minkhent.dev@gmail.com",
     description="Computational efficient models for computer vision",
